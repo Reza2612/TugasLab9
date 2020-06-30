@@ -17,16 +17,19 @@ namespace TugasLab9
             do
             {
                 Console.WriteLine("Pilih Menu Aplikasi");                               
-				Console.WriteLine("1. Tambah Data Karyawan");
+		
+		Console.WriteLine("1. Tambah Data Karyawan");
                 Console.WriteLine("2. Tampilkan Data Karyawan");
                 Console.WriteLine("3. Ubah Data Karyawan");
                 Console.WriteLine("4. Hapus Data Karyawan");
                 Console.WriteLine("5. Keluar");                               
-				Console.Write("Pilihan (1 sd 5): ");
+		
+		Console.Write("Pilihan (1 sd 5): ");
                 input = Convert.ToInt32(Console.ReadLine());
                 switch (input)
                 {                    
-					case 1:
+			
+			case 1:
                         Console.WriteLine("Tambah Data Karyawan\n");
                         Console.WriteLine("Jenis Karyawan\n1. Karyawan Tetap \n2. Karyawan Harian \n3. Sales ");
                         Console.Write("Pilihan (1 sd 3): ");
@@ -34,7 +37,8 @@ namespace TugasLab9
                         Console.WriteLine();
                         switch (pil)
                         {                           
-							case 1:
+				
+				case 1:
                                 Karyawantetap Karyawantetap = new Karyawantetap();
                                 Console.Write("NIK : ");
                                 Karyawantetap.nik = Console.ReadLine();
@@ -44,7 +48,8 @@ namespace TugasLab9
                                 Karyawantetap.gajibulanan = Convert.ToDouble(Console.ReadLine());
                                 listKaryawan.Add(Karyawantetap);
                                 break;                           
-							case 2:
+				
+				case 2:
                                 Karyawanharian Karyawanharian = new Karyawanharian();
                                 Console.Write("NIK : ");
                                 Karyawanharian.nik = Console.ReadLine();
@@ -56,7 +61,8 @@ namespace TugasLab9
                                 Karyawanharian.upahperjam = Convert.ToDouble(Console.ReadLine());
                                 listKaryawan.Add(Karyawanharian);
                                 break;                           
-							case 3:
+				
+				case 3:
                                 Sales Sales = new Sales();
                                 Console.Write("NIK : ");
                                 Sales.nik = Console.ReadLine();
@@ -73,7 +79,8 @@ namespace TugasLab9
                                 break;
                         }
                         break;                    
-					case 2:
+			
+			case 2:
                         int noUrut = 0;
                         string jenis = " ";
                         Console.WriteLine("Data Karyawan\n");
@@ -104,7 +111,8 @@ namespace TugasLab9
                             Console.WriteLine("Data Karyawan Kosong");
                         }
                         break;                    
-					case 3:
+			
+			case 3:
                         int i;
                         Console.WriteLine("Ubah Data Karyawan\n");
                         Console.Write("NIK : ");
@@ -132,7 +140,8 @@ namespace TugasLab9
                             }
                         }
                         break;                    
-					case 4:
+			
+			case 4:
                         int no = -1, hapus = -1;
                         Console.WriteLine("Hapus Data Karyawan\n");
                         Console.Write("NIK : ");
@@ -155,7 +164,8 @@ namespace TugasLab9
                             Console.WriteLine("\nData Tidak Ditemukan");
                         }
                         break;                    
-					case 5:
+			
+			case 5:
                         break;
                     default:
                         Console.WriteLine("Pilihan Tidak Tersedia!");

@@ -12,7 +12,8 @@ namespace TugasLab9
         static void Main(string[] args)
         {
             Console.Title = "Tugas Lab 9";
-            int input;
+            
+	    int input;
             List<Karyawan> listKaryawan = new List<Karyawan>();
             do
             {
